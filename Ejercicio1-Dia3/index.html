@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Información de Usuario</legend>
+                <p>
+                    <label for="Username">Nombre de Usuario</label>
+                    <input type="text" name="nombre" id="Username" required autofocus>
+                </p>
+                <p>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="correo" id="email" required>
+                </p>
+                <p>
+                    <label for="WebPage">Página Web</label>
+                    <input type="url" name="url" id="WebPage" placeholder="Escribe la URL de tu página web personal">
+                </p>
+                <p>
+                    <label for="Tel">Telefono</label>
+                    <input type="tel" name="Telefono" id="Tel" disabled value="677073077">
+                </p>
+                <p>
+                    <label for="Color">Color favorito</label>
+                    <input type="color" name="color" id="Color">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Información de Control</legend>
+                <p>
+                    <label for="Date">Fecha</label>
+                    <input type="date" name="Fecha" id="Date">
+                </p>
+                <p>
+                    <label for="Time">Hora Actual</label>
+                    <input type="time" name="Tiempo" id="Time">
+                </p>
+                <p>
+                    <label for="FH">Fecha Y Hora</label>
+                    <input type="datetime-local" name="Fecha_hora" id="FH">
+                </p>
+                <p>
+                    <label for="Month">Mes</label>
+                    <input type="month" name="Mes" id="Month">
+                </p>
+                <p>
+                    <label for="Week">Semana</label>
+                    <input type="week" name="Semana" id="Week">
+                </p>
+                <p>
+                    <label for="Number">Número</label>
+                    <input type="number" name="Numero" id="Number" max="10" min="-10">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Motor de Busqueda</legend>
+                <label for="Search">Búsqueda</label>
+                <input type="search" name="busqueda" id="Search">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
