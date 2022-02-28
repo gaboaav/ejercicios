@@ -2,7 +2,7 @@
     margin: 0px;
 }
 body{
-    background-color: black;
+    background-color: lightblue;
 }
 h1{
     text-align: center;
@@ -35,7 +35,7 @@ li:first-child,li:nth-child(5){
 table{
     border-spacing:0px;
     text-align: center;
-    padding: 10px 15px 10px 40px;
+    padding: 10px 15px 10px 30px;
     width:500px;
 }
 th,td{
@@ -49,13 +49,13 @@ thead>tr{
     background-color: darkblue;
 }
 tbody>tr:nth-child(odd){
-    background-color:aqua;
+    background-color:aquamarine;
 }
 tbody>tr:nth-child(even){
-    background-color: blue;
+    background-color:darkcyan;
 }
 tbody>tr>th{
-    background-color:darkslateblue;
+    background-color:darkcyan;
 }
 tbody>tr:nth-child(3)>td{
     font-weight: bold;
