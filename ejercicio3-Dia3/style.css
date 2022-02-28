@@ -46,19 +46,22 @@ thead>tr>th{
     color:white;
 }
 thead>tr{
-    background-color: darkblue;
+    background-color: rgb(38, 72, 136);
 }
 tbody>tr:nth-child(odd){
-    background-color:aquamarine;
+    background-color:rgb(124, 206, 238);
 }
 tbody>tr:nth-child(even){
-    background-color:darkcyan;
+    background-color:rgb(90, 170, 202);
 }
-tbody>tr>th{
-    background-color:darkcyan;
+tbody>tr>th.odd{
+    background-color:rgb(99, 182, 214);
+}
+tbody>tr>th.even{
+    background-color:rgb(81, 157, 196);
 }
 tbody>tr:nth-child(3)>td{
     font-weight: bold;
-    font-size:1.1em;
-    
+    font-size:1.5em;
+    font-family: monospace;
 }
