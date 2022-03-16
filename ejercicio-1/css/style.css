@@ -1,0 +1,289 @@
+* {
+  font-family: 'NuovaVolte-Regular';
+}
+.container-flex {
+  display: flex;
+}
+/** HEADER **/
+.nav-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  margin: 0px;
+  padding: 20px;
+}
+#Menu {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+}
+#Compra {
+  height: 50px;
+}
+button img {
+  width: 30px;
+  height: 30px;
+}
+.navigation {
+  margin-bottom: 50px;
+}
+.Title {
+  font-size: 3em;
+}
+.resumen {
+  font-size: 1.1em;
+  font-family: 'NuovaVolte-Regular';
+  color: rgba(0, 0, 0, 0.719);
+  padding-bottom: 40px;
+}
+.plans {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.904);
+}
+.plans > button {
+  height: 35px;
+  width: 120px;
+}
+.plans > button:first-child {
+  background-color: rgba(16, 98, 221, 0.973);
+  color: white;
+  border: none;
+}
+.plans > button:last-child {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+
+.beneficts {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.904);
+}
+.beneficts > li::before {
+  content: '✔  ';
+}
+.beneficts > li {
+  margin: 0px 10px;
+}
+
+/*MAIN*/
+.Products > h1 {
+  margin: 0px;
+  padding: 40px 10px;
+}
+.pastProducts,
+.Products > h1 {
+  background-color: rgba(226, 244, 245, 0.685);
+}
+.Products > ul {
+  padding: 0px;
+  margin: 0px;
+}
+.ProductImage {
+  width: 100%;
+  padding: 50px 10px;
+}
+#mainProductInfo {
+  padding-left: 10px;
+}
+#mainProductInfo .report {
+  color: blue;
+}
+.ProductInfo {
+  padding-left: 10px;
+}
+.ProductInfo > h1 {
+  margin: 0;
+}
+#Planes{
+    margin-top: 30px;
+}
+#Planes > .Selection {
+    color: white;
+  }
+.Selection >.planesInfo>h1{
+    margin: 0px;
+}
+  #Planes > .Selection:first-child {
+    background-color: rgb(0, 89, 255);
+    
+  }
+  #Planes > .Selection:last-child {
+    background-color: black;
+  }
+  .planesInfo{
+      padding:10px;
+  }
+  .planesInfo > .plans {
+    border: none;
+    padding: 0px;
+  }
+  .planesInfo > .plans > button:first-child {
+    background-color: white;
+    color: black;
+    font-style: 'NuovaVolte-Medium';
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: fit-content;
+    font-size: 1.1em;
+  }
+  .planesInfo > .plans > button:last-child {
+    background-color: transparent;
+    color: white;
+    font-style: 'NuovaVolte-Medium';
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+@media (max-width: 734px) {
+  .ProductImage > img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .access {
+    display: none;
+  }
+}
+@media (min-width: 766px) {
+  #mainProduct {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  #mainProduct > .ProductImage {
+    width: 40%;
+  }
+  #mainProduct > .ProductImage > img {
+    width: 100%;
+  }
+  #mainProduct .plans {
+    border: none;
+  }
+  .pastProducts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .pastProducts > li {
+    width: 350px;
+    border-bottom: 1px solid black;
+    list-style-type: none;
+  }
+  .pastProducts > li > .ProductImage > img {
+    width: 204px;
+  }
+  .pastProducts .plans {
+    border: none;
+  }
+  #Planes {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #Planes > .Selection {
+    width: 40%;
+    color: white;
+    margin: 20px 50px;
+  }
+  #Planes > .Selection:first-child {
+    background-color: rgb(0, 89, 255);
+  }
+  #Planes > .Selection:last-child {
+    background-color: black;
+  }
+  .planesInfo {
+    padding: 50px;
+  }
+  .planesInfo>ul{
+      margin-bottom:40px;
+  }
+  .planesInfo >p,.planesInfo>ul>li, .planesInfo>h3{
+      font-size: 1.3em;
+      text-align: justify;
+  }
+  .planesInfo > .plans {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .planesInfo > .plans > button:first-child {
+    background-color: white;
+    color: black;
+    font-style: 'NuovaVolte-Medium';
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: fit-content;
+    font-size: 1.1em;
+  }
+  .planesInfo > .plans > button:last-child {
+    background-color: transparent;
+    color: white;
+    font-style: 'NuovaVolte-Medium';
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+@media (min-width: 1025px) {
+  #Menu {
+    display: none;
+  }
+  .Logo {
+    width: 5%;
+  }
+  .navbar {
+    list-style-type: none;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 1.3em;
+    color: rgba(158, 155, 155, 0.795);
+  }
+  .navbar > li:hover {
+    color: black;
+    border-bottom: 1px solid blue;
+  }
+  .Sign-In {
+    height: 30px;
+    justify-content: right;
+    align-items: center;
+    width: 27%;
+  }
+  .Sign-In > button {
+    margin-left: 20px;
+  }
+  .Sign-In > button:first-child {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3em;
+  }
+  .Sign-In > button:nth-child(2) {
+    font-size: 1.3em;
+    border: none;
+    width: 120px;
+    color: white;
+    background-color: rgba(16, 98, 221, 0.973);
+  }
+}
+
+@font-face {
+  font-family: NuovaVolte-Medium;
+  src: url('../fonts/NuovaVolte-Medium.woff2');
+}
+@font-face {
+  font-family: NuovaVolte-Regular;
+  src: url('../fonts/NuovaVolte-Regular.woff2');
+}
+@font-face {
+  font-family: NuovaVolte-SemiBold;
+  src: url('../fonts/NuovaVolte-SemiBold.woff2');
+}
